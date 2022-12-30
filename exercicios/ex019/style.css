@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Em HTMl id="" em CSS #
+    Em HTML class em CCS .
+*/
+
+body{
+    background-color: #ECFBB7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: #6B7A35;
+    background-color: white;
+    font-style: italic;
+    text-align: center;
+}
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: #6B7A35;
+
+}
+h2{
+    color: #AEC756;
+}
+.basico{
+color: #6B7A35;
+font-weight: bold;
+}
+.intermediario {
+color: #485223;
+}
+.avancado{
+color: #323918;
+}
+.destaque {
+    background-color: rgba(231, 231, 131, 0.727);
+}
