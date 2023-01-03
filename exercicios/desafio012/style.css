@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'); 
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Montserrat', sans-serif;
+    --fonte3: 'Tenor Sans', sans-serif;
+}
+
 * { 
     margin: 0px;
     padding: 0px; /*retirou todos os espacamentos dessa forma, para formatar melhor*/
@@ -8,21 +17,30 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte2);
+}
+
+body{
+    font-size: 1.1em;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* fazer letras em formato maiusculo mais delicado */
+    font-size: 5vw; /* isso significa 10% do tamanho da tela*/
 }
 
 header > p {
     padding-bottom: 50px;
+    font-size: 2vw;
 }
 
 a {
@@ -40,6 +58,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*fazer espacamento entre as linhas*/
     padding-left: 30px;
+    font-size: 2.5vw;
 }
 
 section.normal {
@@ -53,7 +72,7 @@ section.image {
 }
 
 section.image > p {
-    width: 500px; /* criar o tamanho do quadrado preto*/
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.462);
     padding: 10px;
 }
@@ -61,6 +80,7 @@ section.image > p {
 footer {
     background-color: black;
     color: white;
+    font-size: 0.8em;
     text-align: center;
     padding: 10px;
 }
